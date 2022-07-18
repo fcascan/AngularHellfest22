@@ -1,0 +1,26 @@
+footer {
+	background-color: #28282a;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+a {
+	text-decoration: none;
+}
+.sponsorsDiv {
+  display: flex;
+	align-items: center;
+	justify-content: center;
+  min-width: 100vw;
+  min-height: 50px;
+}
+.saludoFooter{
+	font-family: "Neufile Grotesk";
+	color: #d4cebd;
+	font-size: 12px;
+	text-align: center
+}
+.sponsorImg {
+	width: 15vw;
+}

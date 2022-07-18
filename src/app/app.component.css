@@ -1,0 +1,91 @@
+/*********************************************************/
+/* Definicion de fuentes */
+/**************************/
+@font-face {
+	font-family: "Tungsten";
+	src: url("/assets/fonts/Tungsten-Semibold.woff2") format("woff2"),
+		url("/assets/fonts/Tungsten-Semibold.woff") format("woff");
+	font-weight: 600;
+	font-style: normal;
+	font-display: swap;
+}
+@font-face {
+	font-family: "Neufile Grotesk";
+	src: url("/assets/fonts/NeufileGrotesk-Bold.woff2") format("woff2"),
+		url("/assets/fonts/NeufileGrotesk-Bold.woff") format("woff");
+	font-weight: bold;
+	font-style: normal;
+	font-display: swap;
+}
+@font-face {
+	font-family: "Neufile Grotesk";
+	src: url("/assets/fonts/NeufileGrotesk-Medium.woff2") format("woff2"),
+		url("/assets/fonts/NeufileGrotesk-Medium.woff") format("woff");
+	font-weight: 500;
+	font-style: normal;
+	font-display: swap;
+}
+@font-face {
+	font-family: "Neufile Grotesk";
+	src: url("/assets/fonts/NeufileGrotesk-Regular.woff2") format("woff2"),
+		url("/assets/fonts/NeufileGrotesk-Regular.woff") format("woff");
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+}
+@font-face {
+	font-family: "Neufile Grotesk";
+	src: url("/assets/fonts/NeufileGrotesk-SemiBold.woff2") format("woff2"),
+		url("/assets/fonts/NeufileGrotesk-SemiBold.woff") format("woff");
+	font-weight: 600;
+	font-style: normal;
+	font-display: swap;
+}
+@font-face {
+	font-family: "Microgramma D Extended";
+	src: url("/assets/fonts/MicrogrammaD-BoldExte.woff2") format("woff2"),
+		url("/assets/fonts/MicrogrammaD-BoldExte.woff") format("woff");
+	font-weight: bold;
+	font-style: normal;
+	font-display: swap;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* For debbuging purposes only. Comment when done: TODO */
+/* div {
+	border-color: magenta;
+	border-style: solid;
+	border-width: 1px;
+}
+section {
+	border-color: cyan;
+	border-style: solid;
+	border-width: 1px;
+} */
+
+
+
+
+
+
+
+
+
+
+
+
+
+.neufilegroteskSmall {
+	font-family: "Neufile Grotesk";
+	font-size: 20px;
+	color: #d4cebd;
+}

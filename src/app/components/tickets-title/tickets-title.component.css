@@ -1,0 +1,10 @@
+.titleSection{
+	height: 70vh;
+	overflow: hidden;
+	position: relative;
+}
+
+.filledText {
+	font-family: "Microgramma D Extended";
+	font-size: 50px;
+}

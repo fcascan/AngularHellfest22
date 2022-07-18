@@ -1,0 +1,134 @@
+/*********************************************************/
+/* NAVBAR HAMBURGUER */
+/*********************/
+/* Fuente: https://alvarotrigo.com/blog/hamburger-menu-css/ */
+.hamburguer {
+	display: flex;
+	flex-direction: row;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	position: absolute;
+	top: 0;
+	margin-top: 11.9vh;
+	left: 0;
+	flex-direction: column;
+	width: 100%;
+	justify-content: center;
+	align-items: center;
+}
+.hamburguer > .hamLi {
+	margin: 0 1rem;
+	overflow: hidden;
+}
+.hamburguer-button-container {
+	display: flex;
+	height: 100%;
+	width: 30px;
+	cursor: pointer;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+#hamburguer-toggle {
+	display: none;
+}
+.hamburguer-button-container:hover {
+	transition: transform 0.30s ease-in-out;
+	transform: scale(1.1);
+}
+.hamburguer-button,
+.hamburguer-button::before,
+.hamburguer-button::after {
+  display: block;
+  /* background-color: #d4cebd; */
+  /* background-image: url("/assets/img/svgexport-3.svg"); */
+  position: absolute;
+  height: 4px;
+  width: 30px;
+  transition: transform 400ms cubic-bezier(0.23, 1, 0.32, 1);
+  border-radius: 2px;
+}
+.hamburguer-button::before {
+  content: '';
+  margin-top: -8px;
+}
+.hamburguer-button::after {
+  content: '';
+  margin-top: 8px;
+}
+#hamburguer-toggle:checked + .hamburguer-button-container .hamburguer-button::before {
+  margin-top: 0px;
+  /* display: none; */
+  /* transform: rotate(-405deg); */
+  /* background-image: url("/assets/img/svgexport-4.svg"); */
+}
+#hamburguer-toggle:checked + .hamburguer-button-container .hamburguer-button {
+  background: rgba(255, 255, 255, 0);
+}
+#hamburguer-toggle:checked + .hamburguer-button-container .hamburguer-button::after {
+  margin-top: 0px;
+  /* transform: rotate(-405deg); */
+  /* display: none; */
+}
+#hamburguer-toggle:checked ~ .hamburguer .hamLi {
+	height: 15vh;
+	border: 0;
+	padding-left: 20vw;
+	transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
+}
+/* .hamburguer > .hamLi:not(:last-child) {
+	border-bottom: 1px solid #444;
+} */
+.hamburguer > .hamLi {
+	display: flex;
+	justify-content: left;
+	align-items: center;
+	/* padding-left: 15px; */
+	padding-left: 20vw;
+	/* padding: 0.5em 0; */
+	width: 100%;
+	background-color: black;
+	background-image: url("/assets/img/pattern-dark.jpg");
+}
+.hamburguer {
+	position: absolute;
+	top: 0;
+	margin-top: 12vh;
+	left: 0;
+	flex-direction: column;
+	width: 100%;
+	justify-content: center;
+	align-items: center;
+}
+#hamburguer-toggle ~ .hamburguer .hamLi {
+	height: 0;
+	margin: 0;
+	padding: 0;
+	padding-left: 20vw;
+	border: 0;
+	transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+
+.navbarDiv {
+	padding: 0 0 0 3vw;	/* padding: top right bottom left */
+	border: 0;
+	height: 18vh;
+	max-height: 12vh;
+	min-width: 100vw;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background-color: black;
+	color: white;
+	font-family: "Tungsten";
+	font-size: 20px;
+	position: fixed;
+	z-index: 99;
+}
+.hamIcon {
+	z-index: 100;
+}

@@ -1,0 +1,61 @@
+/*********************************************************/
+/* TICKETS PAGE */
+/****************/
+.formSection{
+	background-image: url(/assets/img/pattern-dark-secondary.jpg);
+	width: 100vw;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+}
+.ticketsDiv {
+	overflow: hidden;
+	width: 100vw;
+	height: 100vh;
+}
+.dataForm{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+}
+.fieldFormDiv{
+	padding: 2vw;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+	align-items: center;
+}
+.field1Form{
+	padding: 20px;
+}
+.field2Form{
+	padding: 20px;
+}
+.despliegueLogin {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	background-image: url(/assets/img/pattern-light.jpg);
+}
+.ticketsSpan {
+	font-family: "Neufile Grotesk";
+	font-size: 15px;
+	color: #d4cebd;
+}
+label, span {
+	font-family: "Neufile Grotesk";
+	font-size: 15px;
+	color: #d4cebd;
+}
+input {
+	font-family: "Neufile Grotesk";
+	font-size: 15px;
+	color: #28282a;
+}
