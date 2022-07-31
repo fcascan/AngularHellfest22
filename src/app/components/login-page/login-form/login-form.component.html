@@ -1,0 +1,34 @@
+<!------------>
+<!-- FORM- --->
+<!------------>
+<section class="formSection">
+  <br><br>
+  <div>
+    <span class="loginSpan">Please, use your credentials to login into your account, or click Register to create an account.</span>
+  </div>
+  <form #formulario="ngForm" autocomplete="off" style="padding: 2vw;" (ngSubmit)="onSubmit()">
+    <fieldset class="loginSpan">
+      <div class="dataForm" style="padding: 20px;">
+        <div style="border-color: #d4cebd; padding: 20px;">
+          <label for="email">E-mail:ㅤ</label> <input ngModel type="email" name="email" id="email" minlength="{{minMail}}" maxlength="50" placeholder="hellfest@mail.com" required><br>
+          <span *ngIf="campoNoEsValido('email')" class="alertSpan"> E-mail Required. It's needed at least {{ minMail }} characters. <br></span><br>
+          <label for="pass">Password:ㅤ</label> <input ngModel type="password" name="pass" id="pass" minlength="{{minPass}}" maxlength="20" placeholder="******" pattern="[A-Za-z0-9]{6,20}" required><br>
+          <span *ngIf="campoNoEsValido('pass')" class="alertSpan"> It's needed at least {{ minPass }} alphanumeric characters. <br></span><br>
+          <label for="role">Role:ㅤ</label>
+          <select ngModel name="role" id="role" [selectedIndex]="'Comprador'" required>
+            <option  value="Comprador">User</option>
+            <option value="Personal">Personal</option>
+            <option value="Proveedor">Supplier</option>
+          </select><br>
+          <span *ngIf="campoNoEsValido('role')" class="alertSpan"> Selection Required.<br></span><br>
+          <div style="display: flex; flex-direction: row; justify-content: space-evenly;">
+            <input type="submit" class="button" name="submit" value="LOGIN" (click)="fieldsTouched()" [disabled]="formulario.invalid"> ㅤ
+            <button type="reset" id="clearBtn" class="buttonDark" name="Register" routerLink="/register">REGISTER</button>
+          </div>
+          <br>
+          <a href="mailto:help@hellfest.fr">Forgot your credentials? Click Me!</a>
+        </div>
+      </div>
+    </fieldset>
+  </form>
+</section>

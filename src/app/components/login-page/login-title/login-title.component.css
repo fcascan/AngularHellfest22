@@ -1,0 +1,17 @@
+.titleSection{
+	height: 70vh;
+	overflow: hidden;
+	position: relative;
+	/*
+		font-family: "Microgramma D Extended";
+	font-size: 85px;
+    text-align: right;
+	line-height: 80px;
+	background-color: transparent;
+	justify-items: right;
+	position: absolute;
+	top: 3%;
+	right: 6%;
+	*/
+}
+

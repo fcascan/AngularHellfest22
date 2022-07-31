@@ -1,30 +1,47 @@
+import { LoginService } from './controllers/login.service';
+import { Ticket } from './domain/ticket';
+import { HttpClientModule } from '@angular/common/http';
+import { LoginModule } from './views/login-page/login.module';
+import { LineupModule } from './views/lineup-page/lineup.module';
+import { HomeModule } from './views/home-page/home.module';
+import { TicketsModule } from './views/tickets-page/tickets.module';
+import { RouterModule } from '@angular/router';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
-import { TicketsFormComponent } from './components/tickets-form/tickets-form.component';
 import { NavbarPlaceholderComponent } from './components/navbar-placeholder/navbar-placeholder.component';
-import { TicketsTitleComponent } from './components/tickets-title/tickets-title.component';
 import { FixedTicketComponent } from './components/fixed-ticket/fixed-ticket.component';
+import { CurtainComponent } from './components/curtain/curtain.component';
+import { TicketsService } from './controllers/tickets.service'
 
 @NgModule({
   declarations: [
     AppComponent,
-    FooterComponent,
     NavbarComponent,
-    TicketsFormComponent,
-    NavbarPlaceholderComponent,
-    TicketsTitleComponent,
     FixedTicketComponent,
+    NavbarPlaceholderComponent,
+    FooterComponent,
+    CurtainComponent,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    RouterModule,
+    TicketsModule,
+    LineupModule,
+    LoginModule,
+    HttpClientModule,
   ],
-  providers: [],
-  bootstrap: [AppComponent]
+  providers: [
+    // ...SERVICES
+    TicketsService,
+    LoginService,
+  ],
+  bootstrap: [
+    AppComponent,
+  ]
 })
 export class AppModule { }

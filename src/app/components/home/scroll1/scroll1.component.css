@@ -1,0 +1,16 @@
+.scrollDiv1 {
+	background-attachment: fixed;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	white-space: nowrap;
+	width: 100vw;
+}
+.scrollText {
+	color: transparent;
+	-webkit-text-fill-color: black;
+	-webkit-text-stroke-width: 0.5px;
+	-webkit-text-stroke-color: #d4cebd;
+	font-family: "Tungsten";
+	font-size: 16vw;
+}

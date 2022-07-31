@@ -16,7 +16,7 @@ html {
 	padding: 0px;
 	margin: 0px;
 	background-color: black;
-  scroll-behavior: smooth;
+  /* scroll-behavior: smooth; */
 }
 body {
 	position: relative;
@@ -32,6 +32,17 @@ a {
 	text-decoration: none;
 }
 
+/* For debbuging purposes only. Comment when done: TODO */
+div {
+	border-color: magenta;
+	border-style: solid;
+	border-width: 1px;
+}
+section {
+	border-color: cyan;
+	border-style: solid;
+	border-width: 1px;
+}
 
 /*********************************************************/
 /* ELEMENTOS UNIFICADOS */

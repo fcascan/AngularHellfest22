@@ -1,0 +1,27 @@
+.mjeSeeYouInHell {
+	font-family: "Microgramma D Extended";
+	font-size: 85px;
+  text-align: right;
+	line-height: 80px;
+	background-color: transparent;
+	justify-items: right;
+	position: absolute;
+	top: 12%;
+	right: 6%;
+}
+.videoPlayback {
+	position: center center;
+	height: 90vh;
+}
+.videoDiv {
+	overflow: hidden;
+	width: 100vw;
+	height: 90vh;
+}
+.letsGoToHellImg {
+	position: absolute;
+	max-height: 200px;
+	top: 80vh;
+	left: 5vw;
+	background-color: transparent;
+}

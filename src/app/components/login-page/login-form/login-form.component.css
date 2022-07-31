@@ -1,0 +1,25 @@
+.formSection{
+	background-image: url(/assets/img/pattern-dark-secondary.jpg);
+	width: 100vw;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+}
+.loginSpan {
+	font-family: "Neufile Grotesk";
+	font-size: 15px;
+	color: #d4cebd;
+}
+.dataForm{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+}
+.alertSpan{
+  color: red;
+  font-weight: bold;
+}

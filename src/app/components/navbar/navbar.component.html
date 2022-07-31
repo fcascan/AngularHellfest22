@@ -1,32 +1,32 @@
 <div class="navbarDiv">
-  <a href="../index.html">
+  <a routerLink="/home">
     <img
       class="hellfestLogoImg"
       src="assets/img/svgexport-2.svg"
       alt="logo"
       style="width: 100px; height: 100px"
       title="Home"
-      href="/index.html"
+      routerLink="/home"
+      (click)="closeMenu()"
     />
   </a>
   <div></div>
   <div></div>
   <div></div>
-  <a href="./lineup.html">LINE UP</a>
-  <a href="#Experience">EXPERIENCE</a>
-  <a href="#Infos">INFOS</a>
-  <!-- <a href="#hamburguer" class="hamIcon"><img src="../img/svgexport-3.svg"/></a> -->
-  <input id="hamburguer-toggle" type="checkbox" />
+  <a routerLink="/lineup" (click)="closeMenu()">LINE UP</a>
+  <a href="#Experience" (click)="closeMenu()">EXPERIENCE</a>
+  <a href="#Infos" (click)="closeMenu()">INFOS</a>
+  <input  id="hamburguer-toggle" type="checkbox" #hamburguerToggle/>
     <label class='hamburguer-button-container' for="hamburguer-toggle">
     <img src="assets/img/svgexport-3.svg"/>
         <div class='hamburguer-button'></div>
   </label>
   <ul class="hamburguer">
-    <li class="hamLi"><a class="filledText" href="./lineup.html">LINE UP</a></li>
-    <li class="hamLi"><a class="filledText" href="./experience.html">EXPERIENCE</a></li>
-    <li class="hamLi"><a class="filledText" href="./faq.html">FAQ</a></li>
+    <li class="hamLi"><a class="filledText" routerLink="/lineup" (click)="closeMenu()">LINE UP</a></li>
+    <li class="hamLi"><a class="filledText" href="#Experience" (click)="closeMenu()">EXPERIENCE</a></li>
+    <li class="hamLi"><a class="filledText" href="#FAQ" (click)="closeMenu()">FAQ</a></li>
     <li class="hamLi"><a class="filledText" href="https://www.hellfest.fr/en/news">NEWS</a></li>
-    <li class="hamLi"><a class="filledText" href="./login.html">LOGIN</a></li>
+    <li class="hamLi"><a class="filledText" routerLink="/login" (click)="closeMenu()">LOGIN</a></li>
     <li class="hamLi"></li>
   </ul>
   <div></div>
