@@ -33,7 +33,7 @@ a {
 }
 
 /* For debbuging purposes only. Comment when done: TODO */
-div {
+/* div {
 	border-color: magenta;
 	border-style: solid;
 	border-width: 1px;
@@ -42,7 +42,7 @@ section {
 	border-color: cyan;
 	border-style: solid;
 	border-width: 1px;
-}
+} */
 
 /*********************************************************/
 /* ELEMENTOS UNIFICADOS */
